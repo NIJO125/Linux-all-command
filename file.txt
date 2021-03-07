@@ -1,0 +1,74 @@
+Parameter Description
+-A Shows all processes
+-N Shows the opposite of the specifi ed parameters
+-a Shows all processes except session headers and processes without a
+terminal
+-d Shows all processes except session headers
+-e Shows all processes
+-C cmslist Shows processes contained in the list cmdlist
+-G grplist Shows processes with a group ID listed in grplist
+-U userlist Shows processes owned by a userid listed in userlist
+-g grplist Shows processes by session or by groupid contained in grplist
+-p pidlist Shows processes with PIDs in the list pidlist
+-s sesslist Shows processes with session ID in the list sesslist
+-t ttylist Shows processes with terminal ID in the list ttylist
+-u userlist Shows processes by effective userid in the list userlist
+-F Uses extra full output
+-O format Displays specifi c columns in the list format, along with the default
+columns
+-M Displays security information about the process
+-c Shows additional scheduler information about the process
+-f Displays a full format listing
+-j Shows job information
+-l Displays a long listing
+-o format Displays only specifi c columns listed in format
+-y Prevents display of process fl ags
+-Z Displays the security context information
+-H Displays processes in a hierarchical format (showing parent processes)
+-n namelist Defi nes the values to display in the WCHAN column
+-w Uses wide output format, for unlimited width displays
+-L Shows process threads
+-V Displays the version of ps
+
+
+
+The ps Command GNU Parameters
+
+Parameter Description
+--deselect Shows all processes except those listed in the command line
+--Group grplist Shows processes whose group ID is listed in grplist
+--User userlist Shows processes whose user ID is listed in userlist
+--group grplist Shows processes whose effective group ID is listed in grplist
+--pid pidlist Shows processes whose process ID is listed in pidlist
+--ppid pidlist Shows processes whose parent process ID is listed in pidlist
+--sid sidlist Shows processes whose session ID is listed in sidlist
+--tty ttylist Shows processes whose terminal device ID is listed in ttylist
+--user userlist Shows processes whose effective user ID is listed in userlist
+--format format Displays only columns specifi ed in the format
+--context Displays additional security information
+--cols n Sets screen width to n columns
+--columns n Sets screen width to n columns
+--cumulative Includes stopped child process information
+--forest Displays processes in a hierarchical listing showing parent processes
+--headers Repeats column headers on each page of output
+--no-headers Prevents display of column headers
+--lines n Sets the screen height to n lines
+--rows n Sets the screen height to n rows
+--sort order Defi nes the column(s) to use for sorting the output
+--width n Sets the screen width to n columns
+--help Displays the help information
+--info Displays debugging information
+--version Displays the version of the ps program
+
+
+Linux Process Signals
+Signal Name Description
+1 HUP Hangs up
+2 INT Interrupts
+3 QUIT Stops running
+9 KILL Unconditionally terminates
+11 SEGV Produces segment violation
+15 TERM Terminates if possible
+17 STOP Stops unconditionally, but doesn’t terminate
+18 TSTP Stops or pauses, but continues to run in background
+19 CONT Resumes execution after STOP or TSTPm
